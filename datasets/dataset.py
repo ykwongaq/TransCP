@@ -1,24 +1,23 @@
+import io
+import math
 import os
 import os.path as osp
-import sys
-import random
-import math
-import numpy as np
-import torch
 import pickle
+import random
+import sys
+
+import numpy as np
 import PIL
+import torch
 from PIL import Image
-import io
-
 from torch.utils.data import Dataset
-
-from .utils import convert_examples_to_features, read_examples
-from util.box_ops import box_xyxy_to_cxcywh, box_cxcywh_to_xyxy
 
 # from pytorch_pretrained_bert.tokenization import BertTokenizer
 from transformers import BertTokenizer
-from .transforms import PIL_TRANSFORMS
+from util.box_ops import box_cxcywh_to_xyxy, box_xyxy_to_cxcywh
 
+from .transforms import PIL_TRANSFORMS
+from .utils import convert_examples_to_features, read_examples
 
 # Meta Information
 SUPPORTED_DATASETS = {
@@ -50,7 +49,7 @@ SUPPORTED_DATASETS = {
             "class_level_train_no_negative",
             "inter_class_val_unseen_no_negative",
             "inter_class_train_no_negative",
-            "inter_class_val_seen_segmentation",
+            "inter_class_val_seen_no_negative",
         )
     },
 }
