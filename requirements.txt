@@ -3,7 +3,7 @@ botocore==1.26.10
 certifi==2021.5.30
 charset-normalizer==2.0.12
 click==8.0.4
-dataclasses==0.8
+# dataclasses==0.8
 debugpy==1.5.1
 filelock==3.4.1
 future==1.0.0
@@ -26,8 +26,8 @@ s3transfer==0.5.2
 sacremoses==0.0.53
 six==1.16.0
 tokenizers==0.12.1
-torch @ file:///home/mnt/tangwei3/codes/transCP/torch-1.7.0%2Bcu110-cp36-cp36m-linux_x86_64.whl
-torchvision==0.8.1
+# torch @ file:///home/mnt/tangwei3/codes/transCP/torch-1.7.0%2Bcu110-cp36-cp36m-linux_x86_64.whl
+# torchvision==0.8.1
 tqdm==4.64.1
 transformers==4.18.0
 typing_extensions==4.1.1
